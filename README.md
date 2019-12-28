@@ -8,5 +8,7 @@ git clone https://github.com/WillFarris/PiPowerControl
 cd PiPowerControl
 make
 sudo make install
+sudo systemctl enable powercontrold.service
+sudo systemctl start powercontrold.service
 ```
-By default the program will be placed in `/usr/local/bin/powercontrold`. A future version of this program will automatically create a systemd service to automatically start as a daemon.
+By default the program will be placed in `/usr/local/bin/powercontrold`. A systemd service is created at `/lib/systemd/system/powercontrold.service`.

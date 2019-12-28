@@ -1,0 +1,10 @@
+[Unit]
+Description=Daemon to safely shutdown or reboot the Pi when a GPIO button is pressed
+
+
+[Service]
+ExecStart=/usr/local/bin/powercontrold
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
