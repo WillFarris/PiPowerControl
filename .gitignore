@@ -1,4 +1,4 @@
-powercontrol
+powercontrold
 *.o
 *.dSYM
 *.swp

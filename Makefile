@@ -1,7 +1,7 @@
 CC=gcc
 FLAGS = -Wall
 SOURCE=powercontrol.c
-OUT=powercontrol
+OUT=powercontrold
 
 powercontrol: $(SOURCE)
 	$(CC) $(FLAGS) -lwiringPi -o $(OUT) $(SOURCE)
