@@ -1,5 +1,7 @@
 /* Simple daemon to control soft power down and reboot on button press */
 #include <stdlib.h>
+#include <unistd.h>
+#include <limits.h>
 #include <stdint.h>
 #include <wiringPi.h>
 
@@ -45,6 +47,6 @@ int main()
 	pullUpDnControl(REBOOTPIN, PUD_UP);
 	wiringPiISR(REBOOTPIN, INT_EDGE_FALLING, &handle_reboot_interrupt);
 
-	for(;;) {} //loop forever
+	for(;;) {sleep(UINT_MAX);} //loop forever
 	return 0;
 }
