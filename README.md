@@ -3,6 +3,8 @@ Script to safely shutdown a Raspberry Pi using GPIO interrupts
 
 ## Installation
 
+Requires the `wiringPi` library
+
 ```
 git clone https://github.com/WillFarris/PiPowerControl
 cd PiPowerControl
