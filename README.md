@@ -1,5 +1,5 @@
 # PiPowerControl
-Script to safely shutdown a Raspberry Pi using GPIO interrupts
+Daemon to safely shutdown a Raspberry Pi using GPIO interrupts
 
 ## Installation
 
